@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estante Virtual</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-name">
+                <img src="logo.png" alt="Logo" class="logo">
+                <h1>Estante Virtual</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#">Categoria</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Ficção</a></li>
+                            <li><a href="#">Romance</a></li>
+                            <li><a href="#">Aventura</a></li>
+                            <li><a href="#">Suspense</a></li>
+                            <li><a href="#">Infantil</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Promoções</a></li>
+                    <li><a href="#">Minha Estante</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <img src="sacola-icon.png" alt="Sacola" class="icon">
+                <img src="perfil-icon.png" alt="Perfil" class="icon">
+            </div>
+        </div>
+    </header>
+
+    <div class="search-bar">
+        <p>Já sabe por onde começar? Encontre sua próxima leitura.</p>
+        <div class="search-container">
+            <input type="text" placeholder="Pesquise um livro ou autor">
+        </div>
+    </div>
+
+    <div class="new-releases">
+        <h2 class="centered-title">Novos Lançamentos</h2>
+        <div class="carousel-container">
+            <div class="carousel" id="carousel-1">
+                <img src="book1.jpg" alt="Novo Lançamento">
+                <img src="book2.jpg" alt="Novo Lançamento">
+                <img src="book3.jpg" alt="Novo Lançamento">
+                <img src="book4.jpg" alt="Novo Lançamento">
+                <img src="book5.jpg" alt="Novo Lançamento">
+                <img src="book6.jpg" alt="Novo Lançamento">
+            </div>
+            <button class="carousel-btn prev" onclick="moveCarousel('carousel-1', -1)">&#10094;</button>
+            <button class="carousel-btn next" onclick="moveCarousel('carousel-1', 1)">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="suggestions">
+        <h2 class="centered-title">Sugestões para Você</h2>
+        <div class="carousel-container">
+            <div class="carousel" id="carousel-2">
+                <img src="book4.jpg" alt="Sugestão">
+                <img src="book5.jpg" alt="Sugestão">
+                <img src="book6.jpg" alt="Sugestão">
+                <img src="book7.jpg" alt="Sugestão">
+                <img src="book8.jpg" alt="Sugestão">
+                <img src="book9.jpg" alt="Sugestão">
+            </div>
+            <button class="carousel-btn prev" onclick="moveCarousel('carousel-2', -1)">&#10094;</button>
+            <button class="carousel-btn next" onclick="moveCarousel('carousel-2', 1)">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="author-section">
+        <h2 class="centered-title">Autor do Mês</h2>
+        <div class="author-info">
+            <img src="author.jpg" alt="Autora" class="author-photo">
+            <div class="author-details">
+                <h2 class="small-author-name">José Saramago</h2>
+                <p>José de Sousa Saramago foi um escritor português. Galardoado com o Nobel de Literatura de 1998. Também ganhou, em 1995, o Prémio Camões, o mais importante prémio literário da língua portuguesa. Saramago foi considerado o responsável pelo efetivo reconhecimento internacional da prosa em língua portuguesa.</p>
+                <button class="btn-know-more">Conheça as obras</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="topics">
+        <h2 class="centered-title">Tópicos Mais Visitados</h2>
+        <div class="topics-list">
+            <ul>
+                <li><a href="#">Literatura Brasileira</a></li>
+                <li><a href="#">Clássicos da Literatura</a></li>
+                <li><a href="#">Dicas de Leitura</a></li>
+                <li><a href="#">Novidades do Mercado</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="newsletter">
+        <div class="newsletter-container">
+            <p>Fique por dentro das novidades! Atualizações de e-books, novos livros, promoções e outros.</p>
+            <div class="search-container">
+                <input type="email" placeholder="Cadastre seu e-mail">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Estante Virtual. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
